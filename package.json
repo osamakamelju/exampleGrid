@@ -1,0 +1,15 @@
+{
+  "name": "grid",
+  "version": "1.0.0",
+  "description": "Enkelt projekt med redigerbar tabell",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "keywords": [],
+  "author": "Osama",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
