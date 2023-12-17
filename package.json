@@ -11,5 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "http-server": "^0.12.3"
+  },
+  "dependencies": {
+    "jspreadsheet": "^10.4.1",
+    "tabulator-tables": "^5.5.2"
   }
 }

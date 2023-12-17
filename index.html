@@ -2,23 +2,32 @@
 <html lang="en">
 
 <head>
-    <title>Page Title</title>
+    <title>FirstMile ExampleGrid</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <div id="exampleGrid" class="hot"></div>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
-    <link href="dist/css/tabulator.min.css" rel="stylesheet">
-    <script type="text/javascript" src="dist/js/tabulator.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://handsontable.com/docs/7.4.2/css/handsontable.full.min.css"> -->
-    <!-- <script src="https://handsontable.com/docs/7.4.2/js/handsontable.full.min.js"></script> -->
+    <link rel="stylesheet" href="/src/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jspreadsheet/dist/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jspreadsheet/dist/jspreadsheet.min.css" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/jsuites/dist/jsuites.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsuites/dist/jsuites.min.css" type="text/css" />
+
+    <script src="https://jspreadsheet.com/v10/jspreadsheet.js"></script>
+    <script src="https://jsuites.net/v5/jsuites.js"></script>
+    <link rel="stylesheet" href="https://jspreadsheet.com/v10/jspreadsheet.css" type="text/css" />
+    <link rel="stylesheet" href="https://jsuites.net/v5/jsuites.css" type="text/css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons" />
+    
+    
 </head>
 
 <body>
 
     <div class="header">
-        <h1>My Website</h1>
-        <p></p>
+        <h1>FirstMile</h1>
+        <p>Where you find your future vehicle</p>
     </div>
 
     <div class="navbar">
@@ -30,33 +39,35 @@
 
     <div class="row">
         <div class="side">
-            <h2>About Me</h2>
-            <h5>Photo of me:</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            <h3>More Text</h3>
-            <p>Lorem ipsum dolor sit ame.</p>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div>
+            <h2>Who we are:</h2>
+            <h5>Premier auto retailer offering top-quality vehicles and exceptional service.</h5>
+            <div class="" style="height:200px;"><img src="/src/Pic/1.jpg" alt="Deal" style="width:300px;height:165px;"></div>
+            <p>"Renowned car dealership specializing in a diverse range of meticulously inspected pre-owned and new vehicles, providing a seamless and customer-centric experience with transparent pricing, personalized financing options, and expert automotive guidance."</p>
+            <h3>More info?</h3>
+            <p>If you have any inquiries don't hesitate to contact us: info@firstmile.se</p>
         </div>
         <div class="main">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco.</p>
+            <h2>Welcome to our showroom</h2>
+            <h5>Title description, Nov 21, 2023</h5>
+            
+            <div id="handsontable"></div>
+            <script type="module" src="/js/index.js"></script>
+
+            <div class="fakeimg" style="height:200px;"><img src="/src/Pic/3.jpg" alt="Deal" style="width:300px;height:165px;"></div>
+            <p>"Premier auto retailer offering top-quality vehicles and exceptional service."</p>
+            <p>"Established automotive powerhouse with a rich history of delivering unparalleled quality and service, proudly serving a multitude of satisfied customers with a curated selection of top-notch vehicles, blending tradition with modern excellence."</p>
             <br>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco.</p>
+            <h2>CARS ON SALE</h2>
+            <h5>Title description, Nov 21, 2023</h5>
+            <div class="fakeimg" style="height:200px;"><img src="/src/Pic/2.jpg" alt="Deal" style="width:300px;height:165px;"></div>
+            <p>Cars list (ON SALE):</p>
+            <p>"Explore our enticing array of meticulously curated used cars for sale, each offering a compelling blend of reliability, performance, and value, ensuring a diverse selection that caters to the distinct preferences of every discerning buyer."</p>
+        
+                <div id='spreadsheet'></div>
         </div>
+
+        
+
     </div>
 
     <div class="footer">
